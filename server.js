@@ -3,6 +3,7 @@ const express = require('express');
 var fs = require('fs')
 var morgan = require('morgan')
 var path = require('path')
+require('dotenv').config();
 
 const app = (module.exports = express());
 const port = process.env.PORT || 3000;
