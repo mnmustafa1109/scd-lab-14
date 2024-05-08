@@ -4,3 +4,8 @@ services:
     build: .
     ports:
       - "3000:3000"
+    environment:
+      PORT: 3000
+      MONGOURL: ${MONGOURL}
+    env_file:
+      - .env
